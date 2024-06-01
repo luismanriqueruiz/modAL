@@ -25,7 +25,7 @@ If you have initial training data available, you can train the estimator by pass
 
     learner = ActiveLearner(
         estimator=RandomForestClassifier(),
-        query_strategy=uncertainty_sampling
+        query_strategy=uncertainty_sampling,
         X_training=X_training, y_training=y_training
     )
 
