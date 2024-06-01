@@ -22,7 +22,6 @@ To create an ActiveLearner object, you need to provide two things: a *scikit-lea
 If you have initial training data available, you can train the estimator by passing it via the arguments ``X_training`` and ``y_training``. For instance, if the samples are contained in ``X_training`` and the labels are in ``y_training``, you can do the following.
 
 .. code:: python
-
     learner = ActiveLearner(
         estimator=RandomForestClassifier(),
         query_strategy=uncertainty_sampling,
